@@ -1,6 +1,6 @@
 from utils.downloader import download_from_drive
 from utils.preprocessor import preprocess_images
-from models.train import train_vae
+from models.train import load_data, build_vae, train_vae
 from models.generator import generate_new_creatives
 
 def main():
@@ -18,6 +18,7 @@ def main():
     
     # Etapa 4: Geração de novos criativos
     generate_new_creatives('models/vae_model.h5', 10, 'data/generated/')
+    print("Processo concluído com sucesso.")
 
 if __name__ == "__main__":
     main()

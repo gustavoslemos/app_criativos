@@ -1,0 +1,12 @@
+# config.yaml
+
+data:
+  raw_folder: 'data/raw/'
+  processed_folder: 'data/processed/'
+  generated_folder: 'data/generated/'
+
+model:
+  input_shape: [256, 256, 3]
+  latent_dim: 128
+  epochs: 50
+  batch_size: 16
